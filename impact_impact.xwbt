@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/impact.xsl
+OUTFILE=/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2
+LICENSE=iMPACT
+USER_INFO=iMPACT

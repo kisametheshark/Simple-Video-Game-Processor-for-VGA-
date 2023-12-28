@@ -1,0 +1,22 @@
+Running: /CMC/tools/xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/gametest_isim_beh.exe -prj /home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/gametest_beh.prj work.gametest 
+ISim O.87xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/project2.vhd" into library work
+Parsing VHDL file "/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/gametest.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 120360 KB
+Fuse CPU Usage: 1250 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity project2 [project2_default]
+Compiling architecture behavior of entity gametest
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/gametest_isim_beh.exe
+Fuse Memory Usage: 2259028 KB
+Fuse CPU Usage: 1330 ms
+GCC CPU Usage: 450 ms

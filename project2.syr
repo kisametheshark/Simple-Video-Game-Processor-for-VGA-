@@ -1,0 +1,644 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: project2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "project2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : project2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/project2.vhd" in Library work.
+Architecture behavioral of Entity project2 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <project2> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <project2> in library <work> (Architecture <behavioral>).
+Entity <project2> analyzed. Unit <project2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <project2>.
+    Related source file is "/home/student2/a3lall/Desktop/COE758/COE758_Tutorials/project2/project2.vhd".
+WARNING:Xst:653 - Signal <paddle2_v_length_pos> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000001100100.
+WARNING:Xst:653 - Signal <paddle2_h_pos> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001011000.
+WARNING:Xst:653 - Signal <paddle2_h_length_pos> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000001010.
+WARNING:Xst:653 - Signal <paddle1_v_length_pos> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000001100100.
+WARNING:Xst:653 - Signal <paddle1_h_pos> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000100011.
+WARNING:Xst:653 - Signal <paddle1_h_length_pos> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000001010.
+    Found 1-bit register for signal <HSYNC>.
+    Found 1-bit register for signal <VSYNC>.
+    Found 8-bit register for signal <B>.
+    Found 8-bit register for signal <G>.
+    Found 8-bit register for signal <R>.
+    Found 32-bit comparator greater for signal <B$cmp_gt0000> created at line 233.
+    Found 32-bit comparator greater for signal <B$cmp_gt0001> created at line 236.
+    Found 32-bit comparator greater for signal <B$cmp_gt0002> created at line 240.
+    Found 32-bit comparator greater for signal <B$cmp_gt0003> created at line 248.
+    Found 32-bit comparator greater for signal <B$cmp_gt0004> created at line 248.
+    Found 32-bit comparator greater for signal <B$cmp_gt0005> created at line 252.
+    Found 32-bit comparator greater for signal <B$cmp_gt0006> created at line 252.
+    Found 32-bit comparator less for signal <B$cmp_lt0000> created at line 233.
+    Found 32-bit comparator less for signal <B$cmp_lt0001> created at line 236.
+    Found 32-bit comparator less for signal <B$cmp_lt0002> created at line 236.
+    Found 32-bit comparator less for signal <B$cmp_lt0003> created at line 248.
+    Found 32-bit comparator less for signal <B$cmp_lt0004> created at line 248.
+    Found 32-bit comparator less for signal <B$cmp_lt0005> created at line 252.
+    Found 32-bit comparator less for signal <B$cmp_lt0006> created at line 252.
+    Found 1-bit register for signal <ball_colour>.
+    Found 32-bit adder for signal <ball_colour$addsub0000> created at line 200.
+    Found 32-bit comparator greater for signal <ball_colour$cmp_gt0000> created at line 200.
+    Found 32-bit comparator greater for signal <ball_colour$cmp_gt0001> created at line 200.
+    Found 32-bit comparator less for signal <ball_colour$cmp_lt0000> created at line 200.
+    Found 32-bit comparator less for signal <ball_colour$cmp_lt0001> created at line 197.
+    Found 32-bit register for signal <ball_h_pos>.
+    Found 32-bit adder for signal <ball_h_pos$addsub0000> created at line 184.
+    Found 32-bit comparator less for signal <ball_h_pos$cmp_lt0000> created at line 187.
+    Found 32-bit 4-to-1 multiplexer for signal <ball_h_pos$mux0002>.
+    Found 3-bit register for signal <ball_h_speed>.
+    Found 3-bit adder for signal <ball_h_speed$add0001>.
+    Found 32-bit adder for signal <ball_h_speed$add0002> created at line 176.
+    Found 32-bit adder for signal <ball_h_speed$add0003> created at line 176.
+    Found 32-bit adder for signal <ball_h_speed$add0004> created at line 172.
+    Found 32-bit adder for signal <ball_h_speed$add0005> created at line 180.
+    Found 32-bit adder for signal <ball_h_speed$add0006> created at line 180.
+    Found 32-bit adder for signal <ball_h_speed$add0007> created at line 180.
+    Found 32-bit comparator greatequal for signal <ball_h_speed$cmp_ge0000> created at line 169.
+    Found 32-bit comparator greatequal for signal <ball_h_speed$cmp_ge0001> created at line 176.
+    Found 32-bit comparator greatequal for signal <ball_h_speed$cmp_ge0002> created at line 176.
+    Found 32-bit comparator greatequal for signal <ball_h_speed$cmp_ge0003> created at line 180.
+    Found 32-bit comparator greatequal for signal <ball_h_speed$cmp_ge0004> created at line 180.
+    Found 32-bit comparator greater for signal <ball_h_speed$cmp_gt0000> created at line 176.
+    Found 32-bit comparator greater for signal <ball_h_speed$cmp_gt0001> created at line 176.
+    Found 32-bit comparator greater for signal <ball_h_speed$cmp_gt0002> created at line 180.
+    Found 32-bit comparator greater for signal <ball_h_speed$cmp_gt0003> created at line 180.
+    Found 32-bit comparator greater for signal <ball_h_speed$cmp_gt0004> created at line 176.
+    Found 32-bit comparator greater for signal <ball_h_speed$cmp_gt0005> created at line 172.
+    Found 32-bit comparator lessequal for signal <ball_h_speed$cmp_le0000> created at line 172.
+    Found 32-bit comparator lessequal for signal <ball_h_speed$cmp_le0001> created at line 176.
+    Found 32-bit comparator lessequal for signal <ball_h_speed$cmp_le0002> created at line 176.
+    Found 32-bit comparator lessequal for signal <ball_h_speed$cmp_le0003> created at line 180.
+    Found 32-bit comparator lessequal for signal <ball_h_speed$cmp_le0004> created at line 180.
+    Found 32-bit comparator less for signal <ball_h_speed$cmp_lt0000> created at line 176.
+    Found 32-bit comparator less for signal <ball_h_speed$cmp_lt0001> created at line 176.
+    Found 32-bit comparator less for signal <ball_h_speed$cmp_lt0002> created at line 180.
+    Found 32-bit comparator less for signal <ball_h_speed$cmp_lt0003> created at line 180.
+    Found 3-bit adder for signal <ball_h_speed$share0000>.
+    Found 32-bit register for signal <ball_v_pos>.
+    Found 32-bit adder for signal <ball_v_pos$addsub0000> created at line 185.
+    Found 32-bit 4-to-1 multiplexer for signal <ball_v_pos$mux0002>.
+    Found 3-bit register for signal <ball_v_speed>.
+    Found 3-bit adder for signal <ball_v_speed$add0001>.
+    Found 3-bit adder for signal <ball_v_speed$addsub0000> created at line 166.
+    Found 32-bit comparator greatequal for signal <ball_v_speed$cmp_ge0000> created at line 162.
+    Found 32-bit comparator greater for signal <ball_v_speed$cmp_gt0000> created at line 165.
+    Found 32-bit comparator lessequal for signal <ball_v_speed$cmp_le0000> created at line 165.
+    Found 1-bit register for signal <clk25>.
+    Found 32-bit comparator greatequal for signal <G$cmp_ge0000> created at line 256.
+    Found 32-bit comparator greatequal for signal <G$cmp_ge0001> created at line 256.
+    Found 32-bit comparator greater for signal <G$cmp_gt0000> created at line 265.
+    Found 32-bit comparator less for signal <G$cmp_lt0000> created at line 256.
+    Found 32-bit comparator less for signal <G$cmp_lt0001> created at line 256.
+    Found 32-bit comparator less for signal <G$cmp_lt0002> created at line 265.
+    Found 32-bit up counter for signal <hPos>.
+    Found 32-bit comparator greater for signal <HSYNC$cmp_gt0000> created at line 123.
+    Found 32-bit comparator lessequal for signal <HSYNC$cmp_le0000> created at line 123.
+    Found 1-bit register for signal <newframe>.
+    Found 32-bit updown accumulator for signal <paddle1_v_pos>.
+    Found 32-bit comparator greatequal for signal <paddle1_v_pos$cmp_ge0000> created at line 214.
+    Found 32-bit comparator lessequal for signal <paddle1_v_pos$cmp_le0000> created at line 211.
+    Found 32-bit comparator less for signal <paddle1_v_pos$cmp_lt0000> created at line 214.
+    Found 32-bit updown accumulator for signal <paddle2_v_pos>.
+    Found 32-bit comparator greatequal for signal <paddle2_v_pos$cmp_ge0000> created at line 220.
+    Found 32-bit comparator lessequal for signal <paddle2_v_pos$cmp_le0000> created at line 217.
+    Found 32-bit comparator less for signal <paddle2_v_pos$cmp_lt0000> created at line 220.
+    Found 1-bit register for signal <videoEn>.
+    Found 32-bit comparator lessequal for signal <videoEn$cmp_le0000> created at line 147.
+    Found 32-bit comparator lessequal for signal <videoEn$cmp_le0001> created at line 147.
+    Found 32-bit up counter for signal <vPos>.
+    Found 32-bit comparator greater for signal <VSYNC$cmp_gt0000> created at line 135.
+    Found 32-bit comparator lessequal for signal <VSYNC$cmp_le0000> created at line 135.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 Accumulator(s).
+	inferred 100 D-type flip-flop(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred  60 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <project2> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 13
+ 3-bit adder                                           : 4
+ 32-bit adder                                          : 9
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Accumulators                                         : 2
+ 32-bit updown accumulator                             : 2
+# Registers                                            : 13
+ 1-bit register                                        : 6
+ 3-bit register                                        : 2
+ 32-bit register                                       : 2
+ 8-bit register                                        : 3
+# Comparators                                          : 60
+ 32-bit comparator greatequal                          : 10
+ 32-bit comparator greater                             : 19
+ 32-bit comparator less                                : 19
+ 32-bit comparator lessequal                           : 12
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 13
+ 3-bit adder                                           : 4
+ 32-bit adder                                          : 9
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Accumulators                                         : 2
+ 32-bit updown accumulator                             : 2
+# Registers                                            : 100
+ Flip-Flops                                            : 100
+# Comparators                                          : 60
+ 32-bit comparator greatequal                          : 10
+ 32-bit comparator greater                             : 19
+ 32-bit comparator less                                : 19
+ 32-bit comparator lessequal                           : 12
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <B_0> in Unit <project2> is equivalent to the following 7 FFs/Latches, which will be removed : <B_1> <B_2> <B_3> <B_4> <B_5> <B_6> <B_7> 
+INFO:Xst:2261 - The FF/Latch <R_0> in Unit <project2> is equivalent to the following 7 FFs/Latches, which will be removed : <R_1> <R_2> <R_3> <R_4> <R_5> <R_6> <R_7> 
+INFO:Xst:2261 - The FF/Latch <G_0> in Unit <project2> is equivalent to the following 7 FFs/Latches, which will be removed : <G_1> <G_2> <G_3> <G_4> <G_5> <G_6> <G_7> 
+
+Optimizing unit <project2> ...
+WARNING:Xst:1293 - FF/Latch <ball_h_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_v_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_h_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_v_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_h_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_v_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_h_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ball_v_speed_0> has a constant value of 1 in block <project2>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block project2, actual ratio is 14.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 205
+ Flip-Flops                                            : 205
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : project2.ngr
+Top Level Output File Name         : project2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 2732
+#      GND                         : 1
+#      INV                         : 109
+#      LUT1                        : 260
+#      LUT2                        : 572
+#      LUT2_L                      : 1
+#      LUT3                        : 86
+#      LUT4                        : 213
+#      LUT4_D                      : 6
+#      MUXCY                       : 1135
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 347
+# FlipFlops/Latches                : 205
+#      FDE                         : 133
+#      FDR                         : 37
+#      FDRE                        : 32
+#      FDRS                        : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 2
+#      OBUF                        : 27
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      653  out of   4656    14%  
+ Number of Slice Flip Flops:            205  out of   9312     2%  
+ Number of 4 input LUTs:               1247  out of   9312    13%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    232    12%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk251                             | BUFG                   | 204   |
+CLK                                | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.900ns (Maximum Frequency: 91.740MHz)
+   Minimum input arrival time before clock: 5.864ns
+   Maximum output required time after clock: 4.326ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk251'
+  Clock period: 10.900ns (frequency: 91.740MHz)
+  Total number of paths / destination ports: 639619 / 439
+-------------------------------------------------------------------------
+Delay:               10.900ns (Levels of Logic = 64)
+  Source:            paddle2_v_pos_3 (FF)
+  Destination:       paddle2_v_pos_31 (FF)
+  Source Clock:      clk251 rising
+  Destination Clock: clk251 rising
+
+  Data Path: paddle2_v_pos_3 to paddle2_v_pos_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.514   0.690  paddle2_v_pos_3 (paddle2_v_pos_3)
+     LUT1:I0->O            1   0.612   0.000  Madd_ball_h_speed_add0007_cy<3>_rt (Madd_ball_h_speed_add0007_cy<3>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_ball_h_speed_add0007_cy<3> (Madd_ball_h_speed_add0007_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<4> (Madd_ball_h_speed_add0007_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<5> (Madd_ball_h_speed_add0007_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<6> (Madd_ball_h_speed_add0007_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<7> (Madd_ball_h_speed_add0007_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<8> (Madd_ball_h_speed_add0007_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<9> (Madd_ball_h_speed_add0007_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<10> (Madd_ball_h_speed_add0007_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<11> (Madd_ball_h_speed_add0007_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<12> (Madd_ball_h_speed_add0007_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<13> (Madd_ball_h_speed_add0007_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<14> (Madd_ball_h_speed_add0007_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<15> (Madd_ball_h_speed_add0007_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ball_h_speed_add0007_cy<16> (Madd_ball_h_speed_add0007_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<17> (Madd_ball_h_speed_add0007_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<18> (Madd_ball_h_speed_add0007_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<19> (Madd_ball_h_speed_add0007_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<20> (Madd_ball_h_speed_add0007_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<21> (Madd_ball_h_speed_add0007_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<22> (Madd_ball_h_speed_add0007_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<23> (Madd_ball_h_speed_add0007_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<24> (Madd_ball_h_speed_add0007_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<25> (Madd_ball_h_speed_add0007_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<26> (Madd_ball_h_speed_add0007_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<27> (Madd_ball_h_speed_add0007_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ball_h_speed_add0007_cy<28> (Madd_ball_h_speed_add0007_cy<28>)
+     XORCY:CI->O           3   0.699   0.603  Madd_ball_h_speed_add0007_xor<29> (ball_h_speed_add0007<29>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_paddle2_v_pos_cmp_ge0000_lut<10> (Mcompar_paddle2_v_pos_cmp_ge0000_lut<10>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_paddle2_v_pos_cmp_ge0000_cy<10> (Mcompar_paddle2_v_pos_cmp_ge0000_cy<10>)
+     MUXCY:CI->O          34   0.399   1.142  Mcompar_paddle2_v_pos_cmp_ge0000_cy<11> (paddle2_v_pos_cmp_ge0000)
+     LUT2:I1->O            1   0.612   0.357  paddle2_v_pos_and0000_inv2 (paddle2_v_pos_and0000_inv)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<0> (Maccum_paddle2_v_pos_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<1> (Maccum_paddle2_v_pos_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<2> (Maccum_paddle2_v_pos_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<3> (Maccum_paddle2_v_pos_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<4> (Maccum_paddle2_v_pos_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<5> (Maccum_paddle2_v_pos_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<6> (Maccum_paddle2_v_pos_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<7> (Maccum_paddle2_v_pos_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<8> (Maccum_paddle2_v_pos_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<9> (Maccum_paddle2_v_pos_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<10> (Maccum_paddle2_v_pos_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<11> (Maccum_paddle2_v_pos_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<12> (Maccum_paddle2_v_pos_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<13> (Maccum_paddle2_v_pos_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<14> (Maccum_paddle2_v_pos_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<15> (Maccum_paddle2_v_pos_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<16> (Maccum_paddle2_v_pos_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<17> (Maccum_paddle2_v_pos_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<18> (Maccum_paddle2_v_pos_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<19> (Maccum_paddle2_v_pos_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<20> (Maccum_paddle2_v_pos_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<21> (Maccum_paddle2_v_pos_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<22> (Maccum_paddle2_v_pos_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<23> (Maccum_paddle2_v_pos_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<24> (Maccum_paddle2_v_pos_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<25> (Maccum_paddle2_v_pos_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<26> (Maccum_paddle2_v_pos_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<27> (Maccum_paddle2_v_pos_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<28> (Maccum_paddle2_v_pos_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<29> (Maccum_paddle2_v_pos_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Maccum_paddle2_v_pos_cy<30> (Maccum_paddle2_v_pos_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Maccum_paddle2_v_pos_xor<31> (Result<31>)
+     FDE:D                     0.268          paddle2_v_pos_31
+    ----------------------------------------
+    Total                     10.900ns (8.108ns logic, 2.793ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 1.760ns (frequency: 568.069MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.760ns (Levels of Logic = 0)
+  Source:            clk25 (FF)
+  Destination:       clk25 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: clk25 to clk25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.451  clk25 (clk251)
+     FDR:R                     0.795          clk25
+    ----------------------------------------
+    Total                      1.760ns (1.309ns logic, 0.451ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk251'
+  Total number of paths / destination ports: 1184 / 128
+-------------------------------------------------------------------------
+Offset:              5.864ns (Levels of Logic = 34)
+  Source:            SW2 (PAD)
+  Destination:       paddle2_v_pos_31 (FF)
+  Destination Clock: clk251 rising
+
+  Data Path: SW2 to paddle2_v_pos_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.106   1.225  SW2_IBUF (SW2_IBUF)
+     LUT2:I0->O            1   0.612   0.357  paddle2_v_pos_and0000_inv2 (paddle2_v_pos_and0000_inv)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<0> (Maccum_paddle2_v_pos_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<1> (Maccum_paddle2_v_pos_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<2> (Maccum_paddle2_v_pos_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<3> (Maccum_paddle2_v_pos_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<4> (Maccum_paddle2_v_pos_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<5> (Maccum_paddle2_v_pos_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<6> (Maccum_paddle2_v_pos_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<7> (Maccum_paddle2_v_pos_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<8> (Maccum_paddle2_v_pos_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<9> (Maccum_paddle2_v_pos_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Maccum_paddle2_v_pos_cy<10> (Maccum_paddle2_v_pos_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<11> (Maccum_paddle2_v_pos_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<12> (Maccum_paddle2_v_pos_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<13> (Maccum_paddle2_v_pos_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<14> (Maccum_paddle2_v_pos_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<15> (Maccum_paddle2_v_pos_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<16> (Maccum_paddle2_v_pos_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<17> (Maccum_paddle2_v_pos_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<18> (Maccum_paddle2_v_pos_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<19> (Maccum_paddle2_v_pos_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<20> (Maccum_paddle2_v_pos_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<21> (Maccum_paddle2_v_pos_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<22> (Maccum_paddle2_v_pos_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<23> (Maccum_paddle2_v_pos_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<24> (Maccum_paddle2_v_pos_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<25> (Maccum_paddle2_v_pos_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<26> (Maccum_paddle2_v_pos_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<27> (Maccum_paddle2_v_pos_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<28> (Maccum_paddle2_v_pos_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Maccum_paddle2_v_pos_cy<29> (Maccum_paddle2_v_pos_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Maccum_paddle2_v_pos_cy<30> (Maccum_paddle2_v_pos_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Maccum_paddle2_v_pos_xor<31> (Result<31>)
+     FDE:D                     0.268          paddle2_v_pos_31
+    ----------------------------------------
+    Total                      5.864ns (4.281ns logic, 1.582ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            clk25 (FF)
+  Destination:       VGA_CLK (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: clk25 to VGA_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.451  clk25 (clk251)
+     OBUF:I->O                 3.169          VGA_CLK_OBUF (VGA_CLK)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk251'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              4.326ns (Levels of Logic = 1)
+  Source:            B_0 (FF)
+  Destination:       B<7> (PAD)
+  Source Clock:      clk251 rising
+
+  Data Path: B_0 to B<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             8   0.514   0.643  B_0 (B_0)
+     OBUF:I->O                 3.169          B_7_OBUF (B<7>)
+    ----------------------------------------
+    Total                      4.326ns (3.683ns logic, 0.643ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 7.86 secs
+ 
+--> 
+
+
+Total memory usage is 667712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
