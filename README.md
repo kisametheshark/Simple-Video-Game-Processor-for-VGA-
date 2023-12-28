@@ -2,6 +2,10 @@ The objective of this design project was to implement and learn about the functi
 
 The approach to the project was to begin the implementation of the visual components, firstly being the static game border/boundaries and the two openings for each player to score in. Then the dynamic visual components being the both paddles and the ball. Once these elements were designed, the game logic including paddle control, ball movement, resetting the ball position after a score, and ball collision detection could be implemented based on the coordinates and sizing of all visual components. Then the implementation of display was made by creating new frames and relaying the correct information on the basis of vertical and horizontal positioning as well as different clock periods. 
 
-The result of this design is a functional video game processor for VGA that displays a ping pong game that is playable with two players using physical switches on the FPGA board. 
+The result of this design is a functional video game processor for VGA that displays a ping pong game that is playable with two players using physical switches on the FPGA board.
+
+Finalized Display of the VGA Pong Game:
+
+![image](https://github.com/jason-lai-02/Simple-Video-Game-Processor-for-VGA-/assets/154931668/35158666-6f2e-4b2e-bf2c-ca640a17b6d2)
 
 Project Collaborators: Adrian Lall, Jason Lai
